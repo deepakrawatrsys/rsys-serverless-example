@@ -5,6 +5,7 @@ frameworkVersion: '3'
 
 provider:
   name: aws
+  region: us-east-1
   runtime: nodejs14.x
   DYNAMODB_CUSTOMER_TABLE: ${self:service}-customerTable-${sls:stage}
   iam:
